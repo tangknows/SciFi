@@ -1,0 +1,65 @@
+<!-- hange main to index, eloquent javascript -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	
+<div class="main">
+	<div id="quizName">Sci-Fi</div>
+	<div id="whySciFi">We are in a tech-heavy society, plunging headlong into an unknown future. Science fiction is what allows you to stand back and analyze the impact of that and put it in context of how it affects people. <i>-J. Michael Straczynski</i></div>
+	<div id="questionContainer1" class="questionOne">
+		<span id="hint"></span><br>
+		<ul id="question">
+			<li> <input id="q0" name="quiz" label="rightAnswer" type="radio" value="questionZero"><span id="questionZero"></span> <span id="result"></span></li>
+			<li> <input id="q1" name="quiz"  label="rightAnswer" type="radio" label="rightAnswer" value="questionOne"><span id="questionOne"></span> <span id="result"></span> </li>
+			<li> <input id="q2" name="quiz" type="radio" value="questionTwo"><span id="questionTwo"></span> <span id="result"></span></li>
+			<li> <input id="q3" name="quiz" type="radio" value="questionThree"><span id="questionThree"></span> <span id="result"></span></li>
+		</ul>
+		<br>
+		
+		<button type="button" id="continueButton" class="continueButton">Begin</a>
+		
+	</div>
+
+	<div id="starsContainer" class="quote"> 
+		<div id="centerStars"><span id="bigger">"</span>
+			<span id="bigger"><span id="letter">G</span>ully Foyle </span>is <span id="red">my</span> name<br>
+			And Terra is my <span id="red">nation </span><br>
+			Deep space is my <span id="red">dwelling </span>place<br>
+			The stars my <span id="red">DESTINATION</span> <span id="bigger">"</span><br>
+		</div>
+	</div>
+	<div id="duneContainer" class="quote"> 
+		<div id="centerDune"><span id="bigger">"</span>
+			I must not <span id="red">fear</span>. Fear is the mind-killer. Fear is the little-death that <span id="red">brings</span> total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be <span id="red">nothing</span>. Only I will remain.<span id="bigger">"</span><br></div>
+		</div>
+	<div id="androidContainer" class="quote"> 
+		<div id="centerAndroid"><span id="bigger">" </span>
+			Empathy, he once had decided, must be limited to herbivores or anyhow omnivores who could depart from a meat diet. Because,ultimately, the empathic gift blurred the boundaries between hunter and victim, between the successful and the defeated.<span id="bigger"> "</span><br></div>
+		</div>
+		
+	<div id="gatacaContainer" class="quote"> 
+		<div id="centerAndroid"><span id="bigger">" </span>
+			You want to know <br>how I did it?<br><span id="red">This is how I did it,</span> <br>Anton --<br>
+			<span id="red">I never saved anything</span> <br>for the swim back.<span id="bigger"> "</span><br></div>
+		</div>
+
+	<div id="questionContainer1" class="resultsDiv">
+		Thanks for taking the quiz! You results are below. <br>
+		Correct Answers: <span id="quesAnsweredCorrectly"></span> <br>
+		Wrong Answers: <span id="quesAnsweredWrong"></span><br>
+	</div>
+	
+
+	
+</div>
+</body>
+</html>
