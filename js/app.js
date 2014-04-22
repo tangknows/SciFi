@@ -2,11 +2,13 @@ $(document).ready(function() {
 	
     $("li").hover(function()
         {
-            $(this).css('border', '1px solid red'); 
+            $(this).css('background-color', 'gray'); 
+			$(this).css('color', 'white'); 
         },
         function()
         {
-            $(this).css('border', '1px solid white')
+            $(this).css('background-color', 'white')
+			$(this).css('color', 'black'); 
         });
 	$("li").click(function()
 		{
