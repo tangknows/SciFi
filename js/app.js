@@ -2,13 +2,11 @@ $(document).ready(function() {
 	
     $("li").hover(function()
         {
-            $(this).css('background-color', 'gray'); 
-			$(this).css('color', 'white'); 
+            $(this).css('border', '1px solid red'); 
         },
         function()
         {
-            $(this).css('background-color', 'white')
-			$(this).css('color', 'black'); 
+            $(this).css('border', '1px solid white')
         });
 	$("li").click(function()
 		{
@@ -19,6 +17,7 @@ $(document).ready(function() {
 		
 	////////////////////////////////////////////////// Hides stuff //////////////////////////////////////////////////
 	$("#quizName").hide();
+	$("#hintBelow").hide();
 	$("#quizName").fadeIn(3000);
 	$("#question").hide();
 	$(".resultsDiv").hide();
@@ -80,6 +79,7 @@ $(document).ready(function() {
 			$("[id=result]").text("");
 			$("#question").show();
 			$("#whySciFi").hide();
+			$("#hintBelow").show();
 			count = count + 1;
 			console.log(count);
 			$("#quizName").animate({top:"-30", width:"400"})
@@ -171,7 +171,7 @@ $(document).ready(function() {
 				if (count === 1) {
 				next();
 				$("#starsContainer").fadeIn(3000);
-
+				
 				$("#questionContainer1").fadeIn(2000);
 				}
 				else if (count === 3) {
